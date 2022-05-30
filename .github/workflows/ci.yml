@@ -4,7 +4,7 @@ on:
 name: CI
 
 jobs:
-  lint:
+  client-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,10 +13,11 @@ jobs:
           node-version: "16"
 
       - name: Lint
+        working-directory: client
         run: |
           yarn lint
 
-  build:
+  client-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,5 +26,32 @@ jobs:
           node-version: "16"
 
       - name: Build
+        working-directory: client
+        run: |
+          yarn build
+
+  server-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Lint
+        working-directory: server
+        run: |
+          yarn lint
+
+  server-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Build
+        working-directory: server
         run: |
           yarn build

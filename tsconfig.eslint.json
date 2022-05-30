@@ -4,7 +4,8 @@
     "noEmit": true
   },
   "include": [
-    "src",
+    "client/src",
+    "server/src",
     ".eslintrc.js",
   ]
 }
