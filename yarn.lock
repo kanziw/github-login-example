@@ -4066,6 +4066,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"client@workspace:client":
+  version: 0.0.0-use.local
+  resolution: "client@workspace:client"
+  dependencies:
+    "@types/node": ^16.7.13
+    "@types/react": ^18.0.0
+    "@types/react-dom": ^18.0.0
+    react: ^18.1.0
+    react-dom: ^18.1.0
+    react-scripts: 5.0.1
+    typescript: ^4.4.2
+    web-vitals: ^2.1.0
+  languageName: unknown
+  linkType: soft
+
 "cliui@npm:^7.0.2":
   version: 7.0.4
   resolution: "cliui@npm:7.0.4"
@@ -6206,6 +6221,22 @@ __metadata:
   checksum: 9ceff8fe968f9270a37a1f73bf3f1f7bda69ca80f4f80850670e0e7b9444ff99323f7ac52f96567f8b5f5fbe7ac717a0d81d3407c7313e82810c6199446a5247
   languageName: node
   linkType: hard
+
+"github-login-example@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "github-login-example@workspace:."
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^5.26.0
+    "@typescript-eslint/parser": ^5.26.0
+    eslint: ^8.16.0
+    eslint-config-kanziw: ^0.1.1
+    eslint-config-standard: ^17.0.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-n: ^15.2.0
+    eslint-plugin-promise: ^6.0.0
+    eslint-plugin-simple-import-sort: ^7.0.0
+  languageName: unknown
+  linkType: soft
 
 "glob-parent@npm:^5.1.2, glob-parent@npm:~5.1.2":
   version: 5.1.2
@@ -10009,30 +10040,6 @@ __metadata:
   checksum: 1bb031080af15397d6eb9c69a0c2e93799991f7197a086e4409ba719398f1256b542a3d6c9a34673d516c684eef3e8226c99b335982593851f58f65f6e43571b
   languageName: node
   linkType: hard
-
-"react-boilerplate@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-boilerplate@workspace:."
-  dependencies:
-    "@types/node": ^16.7.13
-    "@types/react": ^18.0.0
-    "@types/react-dom": ^18.0.0
-    "@typescript-eslint/eslint-plugin": ^5.26.0
-    "@typescript-eslint/parser": ^5.26.0
-    eslint: ^8.16.0
-    eslint-config-kanziw: ^0.1.1
-    eslint-config-standard: ^17.0.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-n: ^15.2.0
-    eslint-plugin-promise: ^6.0.0
-    eslint-plugin-simple-import-sort: ^7.0.0
-    react: ^18.1.0
-    react-dom: ^18.1.0
-    react-scripts: 5.0.1
-    typescript: ^4.4.2
-    web-vitals: ^2.1.0
-  languageName: unknown
-  linkType: soft
 
 "react-dev-utils@npm:^12.0.1":
   version: 12.0.1
