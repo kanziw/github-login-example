@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "Client",
+			"path": "../client"
+		},
+		{
+			"name": "Server",
+			"path": "../server"
+		}
+	],
+	"settings": {
+		"typescript.tsdk": ".yarn/sdks/typescript/lib",
+		"typescript.enablePromptUseWorkspaceTsdk": true,
+		"eslint.nodePath": "../.yarn/sdks",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		},
+		"editor.formatOnSave": true,
+	}
+}

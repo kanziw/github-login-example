@@ -1,7 +1,8 @@
 {
   "name": "github-login-example",
   "workspaces": [
-    "client"
+    "client",
+    "server"
   ],
   "repository": {
     "type": "git",
