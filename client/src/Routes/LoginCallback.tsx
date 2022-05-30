@@ -1,25 +1,23 @@
 import axios from 'axios'
 import { useEffect } from 'react'
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+
+import { userStorage } from '../storage'
 
 export const LoginCallback = () => {
-  const location = useLocation()
   const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
   const code = searchParams.get('code')
 
-  console.log('location', JSON.stringify(location, null, 2))
-  searchParams.forEach((value, key) => {
-    console.log(`searchParam.get('${key}')] -> ${value}`)
-  })
-
-  if (code) {
-    useEffect(() => {
+  useEffect(() => {
+    if (code) {
       axios.post('http://localhost:4000/signUpOrLogIn', { code })
         .then(({ data }) => {
-          console.log('', data)
+          userStorage().set(data)
+          navigate('/')
         })
-    }, [code])
-  }
+    }
+  }, [code])
 
-  return <h1>LOGIN_CALLBACK</h1>
+  return <h1>...Loading</h1>
 }
